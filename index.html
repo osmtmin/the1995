@@ -21,9 +21,9 @@
                 <div id="nav">
                     <!-- pc -->
                     <ul class="pc_gnb">
-                        <li><a href="#">London</a></li>
-                        <li><a href="#">Paris</a></li>
-                        <li><a href="#">Taipei</a></li>
+                        <li class="london"><a href="#">London</a></li>
+                        <li class="paris"><a href="#">Paris</a></li>
+                        <li class="taipei"><a href="#">Taipei</a></li>
                     </ul>
                     <!-- mobile -->
                     <div class="m_nav">
@@ -158,5 +158,22 @@
             })
         });
     </script>
+    <script>
+        $(".london").click(function(){
+            $("body,html").animate({
+                scrollTop: 1250
+            },500)
+        });
+        $(".paris").click(function(){
+            $("body,html").animate({
+                scrollTop: 2000
+            },500)
+        });
+        $(".taipei").click(function(){
+            $("body,html").animate({
+                scrollTop: 2700
+            },500)
+        });
+     </script>
 </body>
 </html>

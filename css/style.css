@@ -13,6 +13,7 @@ ul,ol {
 img {
   max-width: 100%;
 }
+
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -142,7 +143,6 @@ body {
 .visual {
   background: url(../images/bg.jpg) center center/cover no-repeat;
   color: #fff;
-  /* overflow-x: hidden; */
   position: relative;
 }
 
@@ -210,6 +210,7 @@ body {
 
 .portfolio-img-box {
   overflow: hidden;
+  border-radius: 1rem;
 }
 
 .portfolio-img-box img {
@@ -333,8 +334,11 @@ body {
   .portfolio-box {
     grid-template-columns: repeat(2, 1fr);
   }
-
+  .portfolio-img-box{
+    border-radius: 4rem;
+  }
 }
+
 /* mobile */
 @media (max-width: 576px) {
   .visual-content h1 {
@@ -348,5 +352,8 @@ body {
   }
   .top-form {
     grid-template-columns: 1fr;
+  }
+  .portfolio-img-box{
+    border-radius: 20rem;
   }
 }
